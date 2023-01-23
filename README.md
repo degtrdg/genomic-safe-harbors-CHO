@@ -72,8 +72,6 @@ chmod +x safe_harbor.py
 ./safe_harbor.py -fastq data/GCF_000223135.1_ChoWGS_1.0_genomic.fna -gtf data/GCF_000223135.1_ChoWGS_1.0_genomic.gtf
 ```
 
-````
-
 Output:
 
 ```bash
@@ -90,7 +88,7 @@ Creating flanks for telomeres
 Sorting and merging flanked annotations
 Taking safe harbors
 
-````
+```
 
 The output is two files: Safe_harbors.bed that has genomic coordinates of all regions potentially containing safe harbors and Safe_harbors.fasta contains sequences of these regions.
 
