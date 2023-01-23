@@ -8,6 +8,7 @@
 	- [Prerequisites](#prerequisites)
 	- [Data](#data)
 	- [Usage](#usage)
+	- [Reference](#reference)
 
 ## Description
 
@@ -71,11 +72,11 @@ chmod +x safe_harbor.py
 ./safe_harbor.py -fastq data/GCF_000223135.1_ChoWGS_1.0_genomic.fna -gtf data/GCF_000223135.1_ChoWGS_1.0_genomic.gtf
 ```
 
-```
+````
 
 Output:
 
-```
+```bash
 
 Creating reference files
 Creating flanks for genes
@@ -89,11 +90,14 @@ Creating flanks for telomeres
 Sorting and merging flanked annotations
 Taking safe harbors
 
-```
+````
 
 The output is two files: Safe_harbors.bed that has genomic coordinates of all regions potentially containing safe harbors and Safe_harbors.fasta contains sequences of these regions.
 
 ## Reference
 
 Aznauryan et al. (2022), Discovery and validation of novel human genomic safe harbor sites for gene and cell therapies. Cell Genomics
+
+```
+
 ```
