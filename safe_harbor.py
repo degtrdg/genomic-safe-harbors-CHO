@@ -58,6 +58,7 @@ def run(a):
     print("Taking safe harbors")
     os.system(f'bedtools subtract -a {cur_dir/fastq.name}.bed -b tmp/flanked_annotations_merged.bed > Safe_harbors_with_alt.bed')
 
+    # 
 
     # Get sequences of those regions
     os.system(f'bedtools getfasta -fi {fastq} -bed Safe_harbors_with_alt.bed > Safe_harbors.fasta')
